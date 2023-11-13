@@ -1,0 +1,19 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 228px;
+    overflow-y: auto;
+
+    &__item {
+        color: rgba(17, 17, 17, 0.60);
+        line-height: 1.13;
+        letter-spacing: -0.02em;
+
+        &.active {
+            color: $violet;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}

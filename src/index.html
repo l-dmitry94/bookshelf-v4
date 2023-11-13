@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./images/icons.svg">
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <include src="./partials/header.html"></include>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page title</title>
+        <link rel="stylesheet" href="./images/icons.svg" />
+        <link rel="stylesheet" href="./sass/index.scss" />
+        <script type="module" src="./index.js"></script>
+    </head>
+    <body>
+        <include src="./partials/header.html"></include>
+
+        <main>
+            <div class="container">
+                <include src="./partials/sidebar.html"></include>
+                <include src="./partials/bookshelf.html"></include>
+            </div>
+        </main>
+    </body>
 </html>
