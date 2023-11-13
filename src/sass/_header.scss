@@ -63,6 +63,10 @@
     &__burger-icon {
         width: 28px;
         height: 28px;
+
+        &-close {
+            display: none;
+        }
     }
 }
 
@@ -75,7 +79,8 @@
     height: 100%;
     background-image: url(../images/header/header-books.png), radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom center;
+    background-size: contain;
     transition: transform .3s linear;
 
     &__block {
