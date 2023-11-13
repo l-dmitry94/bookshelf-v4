@@ -69,14 +69,13 @@
 .mobile-menu {
     position: absolute;
     top: 0;
-    left: 0;
     z-index: -1;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     background-image: url(../images/header/header-books.png), radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom;
     transition: transform .3s linear;
 
     &__block {
@@ -88,7 +87,7 @@
     }
 
     &.active {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
