@@ -1,3 +1,34 @@
+import axios from 'axios';
+
+const BASE_URL = 'https://books-backend.p.goit.global/books';
+
+export async function fetchCategories() {
+    const response = await axios({
+        method: 'GET',
+        url: `${BASE_URL}/category-list`,
+    });
+
+    return response.data;
+}
+
+export async function fetchCategoriesBooks() {
+    const response = await axios({
+        method: 'GET',
+        url: `${BASE_URL}/top-books`,
+    });
+
+    return response.data;
+}
+
+export async function fetchCategoryBooks(category) {
+    const response = await axios({
+        method: 'GET',
+        url: `${BASE_URL}/category?category=${category}`,
+    });
+
+    return response.data;
+}
+
 export const fonds = [
     {
         title: 'Save the Children',
@@ -54,3 +85,4 @@ export const fonds = [
         retina: new URL('../../images/fonds/fond-9@2x.png', import.meta.url),
     }
 ];
+

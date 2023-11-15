@@ -28,6 +28,13 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
+        height: 292px;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        &.active .fonds__item {
+            transform: translateY(-136px);
+        }
     }
 
     &__item {
@@ -35,6 +42,7 @@
         align-items: center;
         gap: 14px;
         height: 32px;
+        transition: transform .3s linear;
     }
 
     &__item-number {
@@ -47,5 +55,27 @@
 
     &__img {
         filter: brightness(0) invert(1)
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background-color: $white;
+        border-radius: 50%;
+        transition: transform .3s linear;
+        margin: 0 auto;
+
+        &.active {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__button-icon {
+        width: 20px;
+        height: 20px;
+        fill: $violet;
     }
 }

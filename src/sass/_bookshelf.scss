@@ -1,0 +1,85 @@
+.bookshelf {
+
+    &__title {
+        font-size: 32px;
+        line-height: 1.19;
+        letter-spacing: -0.04em;
+        margin-bottom: 40px;
+
+        &-color {
+            color: #4F2EE8;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__category {
+        color: #B4AFAF;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        &:not(:first-child) {
+            display: none;
+        }
+    }
+
+    &__item-img {
+        border-radius: 8px;
+        margin-bottom: 14px;
+    }
+
+    &__item-title {
+        font-size: inherit;
+        line-height: 1.13;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+
+    &__item-author {
+        color: #B4AFAF;
+        font-size: 12px;
+        font-style: italic;
+        line-height: 1.17;
+        letter-spacing: -0.04em;
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 124px;
+        height: 46px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.29;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        border-radius: 40px;
+        border: 2px solid $violet;
+        transition: background-color .3s linear, color .3s linear;
+        margin-left: auto;
+
+        &:is(:hover, :focus) {
+            background-color: $violet;
+            color: $white;
+        }
+    }
+}
