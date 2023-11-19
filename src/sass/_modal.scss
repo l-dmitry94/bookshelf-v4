@@ -1,0 +1,95 @@
+.modal {
+    position: relative;
+    max-width: 579px;
+    background-color: $white;
+    border-radius: 18px;
+    border: 2px solid $black;
+    padding: 40px 24px;
+
+    &__wrapper {
+        margin-bottom: 44px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        fill: transparent;
+        stroke: $black;
+    }
+
+
+    &__image {
+        width: 100%;
+        height: 408px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 14px;
+    }
+
+
+    &__info-top {
+        margin-bottom: 14px;
+
+    }
+
+    &__head {
+        margin-bottom: 18px;
+    }
+
+    &__title {
+        color: $black;
+        font-size: inherit;
+        line-height: 1.13;
+        letter-spacing: -0.04em;
+        margin-bottom: 4px;
+    }
+
+    &__author {
+        color: #B4AFAF;
+        font-size: 12px;
+        font-style: italic;
+        line-height: 1.17;
+        letter-spacing: -0.04em;
+    }
+
+    &__descr {
+        color: $black;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.04em;
+    }
+
+    &__platforms-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        filter: grayscale(100%);
+        transition: filter .3s linear;
+
+        &:hover {
+            filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, .35))
+        }
+    }
+
+    &__button {
+        display: block;
+        width: 211px;
+        height: 46px;
+        color: $black;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.29;
+        letter-spacing: -0.01em;
+        border-radius: 40px;
+        border: 2px solid $violet;
+        text-transform: uppercase;
+        transition: color .3s linear, background-color .3s linear;
+        margin: 0 auto;
+
+        &:is(:hover, :focus) {
+            color: $white;
+            background-color: $violet;
+        }
+    }
+}

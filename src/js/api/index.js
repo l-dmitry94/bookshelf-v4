@@ -29,6 +29,15 @@ export async function fetchCategoryBooks(category) {
     return response.data;
 }
 
+export async function fetchBook(idBook) {
+    const response = await axios({
+        method: 'GET',
+        url: `${BASE_URL}/${idBook}`,
+    });
+
+    return response.data;
+}
+
 export const fonds = [
     {
         title: 'Save the Children',
